@@ -1,0 +1,55 @@
+body{
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 7px;
+}
+
+h1{
+    text-align: center;
+}
+
+#btnIngreso{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuadro_login {
+    border: 1px solid blue;
+    padding: 10px;
+    width: 300px;
+}
+
+.boton_ingresar {
+    width: 200px;
+    margin: auto;
+}
+
+.disponible_text{
+    color: green;
+    font-weight: bold;
+}
+
+.agotado_text{
+    color: red;
+    font-weight: bold;
+}
+
+.oferta_text{
+    color: blue;
+    font-weight: bold;
+}
+
+.text_in_card{
+    font-weight: bold;
+}
+
+footer{
+    background-color: rgb(192, 190, 190);
+    text-align: center;
+}
+
+.input_chico{
+    size: 30px;
+
+}
