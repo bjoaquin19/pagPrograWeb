@@ -236,17 +236,17 @@ $(document).ready(function() {
         },
         precio: {
           required: true,
-          minlength: 2000
+          min: 2000
         },
         des_subsc: {
           required: true,
-          minlength: 0,
-          maxlength: 100
+          min: 0,
+          max: 100
         },
         des_oferta: {
           required: true,
-          minlength: 0,
-          maxlength: 100
+          min: 0,
+          max: 100
         }
       },
       messages: {
@@ -261,16 +261,17 @@ $(document).ready(function() {
         },
         precio: {
           required: "El campo es obligatorio!",
+            min: "Ingrese un precio mayor a 2000!"
         },
         des_subsc: {
           required: "El campo es obligatorio!",
-          minlength: "Se debe ingresar un número mayor o igual a 0",
-          maxlength: "Se debe ingresar un número menor o igual a 100"
+          min: "Se debe ingresar un número mayor o igual a 0",
+          max: "Se debe ingresar un número menor o igual a 100"
         },
         des_oferta: {
           required: "El campo es obligatorio!",
-          minlength: "Se debe ingresar un número mayor o igual a 0",
-          maxlength: "Se debe ingresar un número menor o igual a 100"
+          min: "Se debe ingresar un número mayor o igual a 0",
+          max: "Se debe ingresar un número menor o igual a 100"
         }
       },
 
