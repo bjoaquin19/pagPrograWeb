@@ -22,7 +22,8 @@
             <!-- Categoría -->
             <div class="mb-3">
                 <label for="categoria" class="form-label">Categoría</label>
-                <select id="categoria" class="form-select">
+                <select id="categoria" name="categoria" class="form-select">
+                    <option selected value="">Seleccione una categoría</option>
                     <option value="MOBA">MOBA</option>
                     <option value="RPG">RPG</option>
                     <option value="AVENTURAS">AVENTURAS</option>
@@ -56,17 +57,18 @@
             </div>
             <!-- BOTONES -->
             <div class="d-flex justify-content-start">
-                <button type="button" class="btn btn-success me-3">Guardar</button>
-                <button type="button" class="btn btn-info me-3">Nuevo</button>
-                <button type="button" class="btn btn-danger">Eliminar</button>
+                <button type="submit" class="btn btn-success me-3">Guardar</button>
+                <button type="submit" class="btn btn-info me-3">Nuevo</button>
+                <button type="submit" class="btn btn-danger">Eliminar</button>
             </div>
-            </form>
+            
         </div>
         <!-- FOTO -->
         <div class="p-3 col-sm-12 col-md-4">
             <img class="registro_foto" src="img/fotoperfil.jpg" alt="" height="250px"><br>
             <input type="file" id="foto" name="foto" title="Ingrese foto" accept=".jpg">
         </div>
+        </form>
     </div>
 </div>
 

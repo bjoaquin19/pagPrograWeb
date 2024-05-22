@@ -228,6 +228,9 @@ $(document).ready(function() {
         ID: {
           required: true,
         },
+        categoria:{
+          required: true
+        },
         nombre: {
           required: true,
         },
@@ -236,23 +239,29 @@ $(document).ready(function() {
         },
         precio: {
           required: true,
-          minlength: 2000
+          number: true,
+          min: 0,
         },
         des_subsc: {
           required: true,
-          minlength: 0,
-          maxlength: 100
+          min: 0,
+          max: 100,
+          number:true
         },
         des_oferta: {
           required: true,
-          minlength: 0,
-          maxlength: 100
+          min: 0,
+          max: 100,
+          number:true
         }
       },
       messages: {
         ID: {
           required: "El campo es obligatorio!",
         },
+        categoria:{
+          required : "El campo es obligatorio!"
+        },
         nombre: {
           required: "El campo es obligatorio!",
         },
@@ -261,16 +270,19 @@ $(document).ready(function() {
         },
         precio: {
           required: "El campo es obligatorio!",
+          min: "El valor mínimo es 0"
         },
         des_subsc: {
           required: "El campo es obligatorio!",
-          minlength: "Se debe ingresar un número mayor o igual a 0",
-          maxlength: "Se debe ingresar un número menor o igual a 100"
+          min: "Se debe ingresar un número mayor o igual a 0",
+          max: "Se debe ingresar un número menor o igual a 100",
+          number:"el campo debe ser un número entero!"
         },
         des_oferta: {
           required: "El campo es obligatorio!",
-          minlength: "Se debe ingresar un número mayor o igual a 0",
-          maxlength: "Se debe ingresar un número menor o igual a 100"
+          min: "Se debe ingresar un número mayor o igual a 0",
+          max: "Se debe ingresar un número menor o igual a 100",
+          number:"el campo debe ser un número entero!"
         }
       },
 
