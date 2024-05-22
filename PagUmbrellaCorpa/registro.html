@@ -16,7 +16,7 @@
     <h1>Registro de cliente</h1>
     
     <!-- Formulario de registro de cliente -->
-    <form class="row g-3 needs-validation" novalidate>
+    <form id="formulario-registro" class="row g-3 needs-validation" novalidate>
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <!-- FORMULARIO -->
@@ -25,36 +25,18 @@
                     <div class="mb-3">
                         <label for="rut" class="form-label">RUT</label>
                         <input required placeholder="Ej: 11123123-K" type="text" class="form-control" id="rut" name="rut" aria-describedby="rutHelp">
-                        <div id="rutHelp" class="form-text">
-                            Escribe el RUT sin puntos y con guión.
-                        </div>
-                        <div class="invalid-feedback">
-                            El campo RUT es obligatorio
-                        </div>
                     </div>
 
                     <!-- NOMBRE -->
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Nombre</label>
                         <input required placeholder="Ej: Tilin" type="text" class="form-control" id="nombre" name="nombre" aria-describedby="nombreHelp">
-                        <div id="nombreHelp" class="form-text">
-                            Escriba su Nombre.
-                        </div>
-                        <div class="invalid-feedback">
-                            El campo Nombre es obligatorio!
-                        </div>
                     </div>
 
                     <!-- APELLIDO -->
                     <div class="mb-3">
                         <label for="apellido" class="form-label">Apellido</label>
                         <input required placeholder="Ej: Tilin" type="text" class="form-control" id="apellido" name="apellido" aria-describedby="apellidoHelp">
-                        <div id="apellidoHelp" class="form-text">
-                            Escriba su Apellido.
-                        </div>
-                        <div class="invalid-feedback">
-                            El campo Apellido es obligatorio!
-                        </div>
                     </div>
 
                     <!-- CORREO -->
@@ -73,36 +55,18 @@
                     <div class="mb-3">
                         <label for="direccion" class="form-label">Dirección</label>
                         <textarea class="form-control" id="direccion" name="direccion" rows="2"></textarea>
-                        <div id="direccionHelp" class="form-text">
-                            Ingrese una dirección.
-                        </div>
-                        <div class="invalid-feedback">
-                            El campo Dirección es obligatorio!
-                        </div>
                     </div>
                     
                     <!-- CONTRASEÑA -->
                     <div class="mb-3">
                         <label for="password" class="form-label">Contraseña</label>
-                        <input required type="password" class="form-control" id="password" name="contrasena" aria-describedby="passwordHelp">
-                        <div id="passwordHelp" class="form-text">
-                            La contraseña debe contener minimo 8 caracteres, tener una mayuscula y minuscula, tener un número.
-                        </div>
-                        <div class="invalid-feedback">
-                            El campo Contraseña es obligatorio!
-                        </div>
+                        <input required type="password" class="form-control" id="password" name="password" aria-describedby="passwordHelp">
                     </div>
 
                     <!-- REPETIR CONTRASEÑA -->
                     <div class="mb-3">
                         <label for="password" class="form-label">Repetir Contraseña</label>
-                        <input required type="password" class="form-control" id="password" name="contrasena" aria-describedby="passwordHelp">
-                        <div id="passwordHelp" class="form-text">
-                            Las contraseñas deben coincidir.
-                        </div>
-                        <div class="invalid-feedback">
-                            El campo es obligatorio!
-                        </div>
+                        <input required type="password" class="form-control" id="password2" name="password2" aria-describedby="passwordHelp">
                     </div>
 
                     <!-- checkbox -->
@@ -132,5 +96,9 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js" integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/validador.js"></script>
+
 </body>
 </html>

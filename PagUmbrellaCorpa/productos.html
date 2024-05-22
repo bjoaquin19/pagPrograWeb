@@ -14,9 +14,10 @@
     <div class="row justify-content-center">
         <!-- FORMULARIO -->
         <div class="col-sm-12 col-md-8">
+            <form id="formulario-ad-producto">
             <div class="mb-3">
-                <label for="id" class="form-label">ID</label>
-                <input type="text" class="form-control" id="ID" name="ID" aria-describedby="rutHelp">
+                <label for="ID" class="form-label">ID</label>
+                <input type="number" min="1" class="form-control" id="ID" name="ID">
             </div>
             <!-- Categoría -->
             <div class="mb-3">
@@ -41,17 +42,17 @@
             <!-- Precio -->
             <div class="col-3 mb-3">
                 <label for="precio" class="form-label">Precio</label>
-                <input type="number" class="form-control" id="precio" name="precio" aria-describedby="rutHelp">
+                <input type="number" min="2000" class="form-control" id="precio" name="precio" aria-describedby="rutHelp">
             </div>
             <!-- Descuento subscriptor -->
             <div class="col-3 mb-3">
                 <label for="des_subsc" class="form-label">Descuento subscriptor</label>
-                <input type="text" class="form-control" id="des_subsc" name="des_subsc" aria-describedby="rutHelp">
+                <input type="number" min="0" max="100" class="form-control" id="des_subsc" name="des_subsc" aria-describedby="rutHelp">
             </div>
             <!-- Descuento Oferta -->
             <div class="col-3 mb-3">
                 <label for="des_oferta" class="form-label">Descuento por oferta</label>
-                <input type="text" class="form-control" id="des_oferta" name="des_oferta" aria-describedby="rutHelp">
+                <input type="number" min="0" max="100" class="form-control" id="des_oferta" name="des_oferta" aria-describedby="rutHelp">
             </div>
             <!-- BOTONES -->
             <div class="d-flex justify-content-start">
@@ -59,6 +60,7 @@
                 <button type="button" class="btn btn-info me-3">Nuevo</button>
                 <button type="button" class="btn btn-danger">Eliminar</button>
             </div>
+            </form>
         </div>
         <!-- FOTO -->
         <div class="p-3 col-sm-12 col-md-4">
@@ -125,7 +127,10 @@
         <p>WhatsApp +569 2314 2413 <a href="">Facebook</a>
         <a href="">Instagram</a> Dirección: Moneda 627, Santiago</p>
     </footer>
-  <script src="js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js" integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/validador.js"></script>
 </body>
 </html>
