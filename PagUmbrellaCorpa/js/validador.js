@@ -106,11 +106,11 @@ $(document).ready(function() {
             rutChileno: "El RUT no es válido (escriba sin puntos y con guión)"
         },
         nombre: {
-            required: "El nombre es un campo requerido",
+            required: "El campo es obligatorio!",
             soloLetras: "El nombre sólo puede contener letras y espacios en blanco",
         },
         apellido: {
-            required: "El campo Apellido es obligatorio!",
+            required: "El campo es obligatorio!",
             soloLetras: "El nombre sólo puede contener letras y espacios en blanco"
         },
         correo: {
