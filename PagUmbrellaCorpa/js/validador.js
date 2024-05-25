@@ -299,22 +299,6 @@ $(document).ready(function() {
 
 
 
-    // $("#formulario-bodega").validate({
-    //   rules:{
-    //     cantidad:{
-    //       required: true,
-    //       number: true,
-    //       noNegativos: true
-    //     }
-    //   },
-    //     messages: {
-    //       cantidad:{
-    //         required: "El campo es obligatorio",
-    //         number: "Ingrese solo números",
-    //         noNegativos: "Ingrese un número mayor o igual a cero!"
-    //     }
-    //   }
-    // });
     $("#formulario-bodega").validate({
       rules: {
         categoria:{
