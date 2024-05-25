@@ -298,6 +298,7 @@ $(document).ready(function() {
     });
 
 
+
     // $("#formulario-bodega").validate({
     //   rules:{
     //     cantidad:{
@@ -314,8 +315,37 @@ $(document).ready(function() {
     //     }
     //   }
     // });
-
+    $("#formulario-bodega").validate({
+      rules: {
+        categoria:{
+          required: true,
+        },
+        nombre:{
+          required: true,
+        },
+        cantidad:{
+          required: true,
+          number: true,
+          min:0
+        }
+      },
+      messages: {
+        categoria:{
+          required: "El campo Categoria es obligatorio!"
+        },
+        nombre: {
+          required: "El campo Nombre es obligatorio!"
+        },
+        cantidad:{
+          required: "El campo Cantidad es obligatorio!",
+          number: "Ingrese solo números!",
+          min: "Ingrese un número mayor o igual a cero!"
+        }
+      }
+    })
   
 
     
   });
+
+
