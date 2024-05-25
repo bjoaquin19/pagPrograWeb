@@ -143,7 +143,7 @@ $(document).ready(function() {
             },
             password: {
                 required: true,
-                min:5
+                minlength:5
             },
         },
         messages: {
@@ -153,7 +153,7 @@ $(document).ready(function() {
             },
             password: {
                 required: "El campo es obligatorio!",
-                min: "La contraseña debe tener un mínimo de 5 caracteres",
+                minlength: "La contraseña debe tener un mínimo de 5 caracteres",
             },
         },
 });
