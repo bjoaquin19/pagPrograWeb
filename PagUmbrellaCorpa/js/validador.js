@@ -102,31 +102,31 @@ $(document).ready(function() {
       }, // --> Fin de reglas
       messages: {
         rut: {
-            required: "El RUT es un campo requerido",
+            required: "El campo Rut es obligatorio!",
             rutChileno: "El RUT no es válido (escriba sin puntos y con guión)"
         },
         nombre: {
-            required: "El campo es obligatorio!",
+            required: "El campo Nombre es obligatorio!",
             soloLetras: "El nombre sólo puede contener letras y espacios en blanco",
         },
         apellido: {
-            required: "El campo es obligatorio!",
+            required: "El campo Apellido es obligatorio!",
             soloLetras: "El nombre sólo puede contener letras y espacios en blanco"
         },
         correo: {
-            required: "El correo es un campo requerido",
+            required: "El campo Correo es obligatorio!",
             email: "El formato del correo no es válido",
         },
         direccion: {
-            required: "El campo dirección es obligatorio!",
+            required: "El campo Dirección es obligatorio!",
         },
         password: {
-            required: "La contraseña es un campo requerido",
+            required: "El campo Contraseña es obligatorio!",
             minlength: "La contraseña debe tener un mínimo de 5 caracteres",
             maxlength: "La contraseña debe tener un máximo de 15 caracteres",
         },
         password2: {
-            required: "Repetir contraseña es un campo requerido",
+            required: "El campo Contraseña es obligatorio!",
             minlength: "Repetir contraseña debe tener un mínimo de 5 caracteres",
             maxlength: "Repetir contraseña debe tener un máximo de 30 caracteres",
             equalTo: "Las contraseñas deben coincidir!",
@@ -156,8 +156,8 @@ $(document).ready(function() {
                 required: "El campo es obligatorio!",
             },
         },
+});
 
-    });
 
     // FORMULARIO MANTENEDOR USUARIO (ADMINISTRADOR)
     $("#formulario-ad-usuario").validate({
@@ -192,29 +192,29 @@ $(document).ready(function() {
       },
       messages:{
         ID: {
-          required: "El campo es obligatorio!",
+          required: "El campo ID es obligatorio!",
         },
         rut: {
-          required: "El campo es obligatorio!",
+          required: "El campo Rut es obligatorio!",
           rutChileno: "Ingrese un rut válido!"
         },
         nombre: {
-          required: "El campo es obligatorio!",
+          required: "El campo Nombre es obligatorio!",
           soloLetras: "Ingrese solamente letras!"
         },
         apellido: {
-          required: "El campo es obligatorio!",
+          required: "El campo Apellido es obligatorio!",
           soloLetras: "Ingrese solamente letras!"
         },
         correo: {
-          required: "El campo es obligatorio!",
+          required: "El campo Correo es obligatorio!",
           emailCompleto: "Ingrese un correo válido!"
         },
         direccion: {
-          required: "El campo es obligatorio!",
+          required: "El campo Dirección es obligatorio!",
         },
         password: {
-          required: "El campo es obligatorio!",
+          required: "El campo Contraseña es obligatorio!",
           minlength: "La contraseña debe tener un mínimo de 5 caracteres",
           maxlength: "La contraseña debe tener un máximo de 30 caracteres",
         }
@@ -257,35 +257,34 @@ $(document).ready(function() {
       },
       messages: {
         ID: {
-          required: "El campo es obligatorio!",
+          required: "El campo ID es obligatorio!",
         },
         categoria:{
-          required : "El campo es obligatorio!"
+          required : "El campo Categoría es obligatorio!"
         },
         nombre: {
-          required: "El campo es obligatorio!",
+          required: "El campo Nombre es obligatorio!",
         },
         descripcion: {
-          required: "El campo es obligatorio!",
+          required: "El campo Descripción es obligatorio!",
         },
         precio: {
-          required: "El campo es obligatorio!",
+          required: "El campo Precio es obligatorio!",
           min: "El valor mínimo es 0"
         },
         des_subsc: {
-          required: "El campo es obligatorio!",
+          required: "El campo Desc. Subscriptor es obligatorio!",
           min: "Se debe ingresar un número mayor o igual a 0",
           max: "Se debe ingresar un número menor o igual a 100",
           number:"el campo debe ser un número entero!"
         },
         des_oferta: {
-          required: "El campo es obligatorio!",
+          required: "El campo Desc. Oferta es obligatorio!",
           min: "Se debe ingresar un número mayor o igual a 0",
           max: "Se debe ingresar un número menor o igual a 100",
           number:"el campo debe ser un número entero!"
         }
       },
-
       // errorPlacement: function(error, element) {
       //   // Verifica si el elemento es un campo de tipo número
       //   if (element.attr("type") === "number") {
@@ -320,4 +319,3 @@ $(document).ready(function() {
 
     
   });
-  
