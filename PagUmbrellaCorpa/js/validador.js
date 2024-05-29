@@ -208,7 +208,7 @@ $(document).ready(function() {
         },
         correo: {
           required: "El campo Correo es obligatorio!",
-          emailCompleto: "Ingrese un correo válido!"
+          email: "Ingrese un correo válido!"
         },
         direccion: {
           required: "El campo Dirección es obligatorio!",
