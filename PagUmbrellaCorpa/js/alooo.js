@@ -27,7 +27,7 @@
 $(document).ready(function(){
 
     $.get('http://fakestoreapi.com/products', function(data){
-        $.each(data.slice(0, 6), function(i, item){
+        $.each(data.slice(0, 8), function(i, item){
             html = `
             <div class="card" style="width: 18rem;">
                 <img src="${item.image}" width=300 height=300 class="card-img-top" alt="...">
